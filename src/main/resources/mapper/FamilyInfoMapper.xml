@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.daxiongmao.mapper.FamilyInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.daxiongmao.domain.FamilyInfo">
+            <id property="number" column="number" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="dna" column="DNA" jdbcType="VARCHAR"/>
+            <result property="parentNumber" column="parent_number" jdbcType="INTEGER"/>
+            <result property="femaleNumber" column="female_number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        number,name,DNA,
+        parent_number,female_number
+    </sql>
+</mapper>

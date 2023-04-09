@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.daxiongmao.mapper.HealthInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.daxiongmao.domain.HealthInfo">
+            <id property="name" column="name" jdbcType="CHAR"/>
+            <result property="number" column="number" jdbcType="INTEGER"/>
+            <result property="height" column="height" jdbcType="INTEGER"/>
+            <result property="weight" column="weight" jdbcType="INTEGER"/>
+            <result property="temperature" column="temperature" jdbcType="INTEGER"/>
+            <result property="healthCondition" column="health_condition" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        name,number,height,
+        weight,temperature,health_condition
+    </sql>
+</mapper>
