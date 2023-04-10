@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
+//前后端交互的数据
 public class R<T> {
 
     private Integer code; //编码：1成功，0和其它数字为失败
